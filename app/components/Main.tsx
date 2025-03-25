@@ -4,10 +4,10 @@ import { FaShareAlt } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
 export default function Main() { 
     return (
-        <div className=" absolute top-1/5 left-0 h-[100vh] w-full  flex gap-x-8  items-center p-4 ">
-            <div className="flex  ml-4 h-full w-2/5  gap-x-2 sel">
+        <div className=" left-0  w-full flex gap-x-15  items-center p-6 ">
+            <div className="flex  ml-4 h-full w-2/5  gap-x-2 items-center">
             <p 
-    className="flex gap-x-2 text-lg font-extralight whitespace-nowrap h-[85%] leading-none items-center "
+    className="flex gap-x-2 text-lg font-extralight whitespace-nowrap h-[400px] leading-none items-center "
     style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
 >
     <span className="inline text-red-600 ">Nebula</span> 
@@ -15,7 +15,7 @@ export default function Main() {
     Released May 22, 2020 
 </p>
 
-                            <div className="h-[85%] w-full relative bg-black">
+                            <div className="h-[400px] aspect-square relative ">
                     <Image 
                         src={'/background.jpg'} 
                         alt="album pic" 

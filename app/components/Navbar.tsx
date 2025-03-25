@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <div className="bg-black/50 z-50 sticky   backdrop-blur-md w-full top-0 left-0 self-start  flex justify-between items-center p-4 ">
             <GiSaberToothedCatHead size={30}/>
-            <div className="flex justify-around gap-x-2">
+            <div className="flex justify-around gap-x-4">
                 {socialmedias.map((socialmedia, index) => (
                     <Link key={`socialmedia-${index}`} href={socialmedia.link} > <socialmedia.icon size={20} /></Link>
                 ))}

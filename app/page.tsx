@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import Main from "./components/Main";
+import Stream from "./components/Stream";
 export default function Home() {
   return (
-    <div className="relative h-screen flex  flex-col justif text-white text-3xl">
+    <div className="relative  w-full flex flex-col  items-center   text-white text-3xl">
       <Navbar/>
       <Background/>
-      <Main/>
+      <Main />
+      <Stream />
     </div>
   );
 }
