@@ -1,10 +1,21 @@
 import Image from "next/image";
-import { FaCirclePlay ,FaShare} from "react-icons/fa6";
+import Link from "next/link";
+import { FaShareAlt } from "react-icons/fa";
+import { FaCirclePlay } from "react-icons/fa6";
 export default function Main() { 
     return (
-        <div className=" absolute top-1/5 left-0 h-[100vh] w-[90%] bg-red-500 flex gap-x-4  items-center p-4 ">
-            <div className="ml-4 h-full w-2/5">
-                <div className=" h-[85%] relative bg-black">
+        <div className=" absolute top-1/5 left-0 h-[100vh] w-full  flex gap-x-8  items-center p-4 ">
+            <div className="flex  ml-4 h-full w-2/5  gap-x-2 sel">
+            <p 
+    className="flex gap-x-2 text-lg font-extralight whitespace-nowrap h-[85%] leading-none items-center "
+    style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+>
+    <span className="inline text-red-600 ">Nebula</span> 
+    <span className="inline scale-y-[400%] mx-2">-</span> 
+    Released May 22, 2020 
+</p>
+
+                            <div className="h-[85%] w-full relative bg-black">
                     <Image 
                         src={'/background.jpg'} 
                         alt="album pic" 
@@ -12,23 +23,31 @@ export default function Main() {
                         className="object-cover"
                     />
                 </div>
-                <div>  </div>
             </div>
-            <div className="bg-blue-500 p-4 w-1/2  h-full flex flex-col gap-y-8 justify-center">
-                <div className="flex flex-col justify-around gap-y-4">
-                    <p className="text-2xl">
+            <div className="     p-4 w-1/2  h-full flex flex-col gap-y-16 justify-center">
+                <div className="flex flex-col justify-around gap-y-2">
+                    <p
+                          style={{
+                            WebkitTextStroke: "1px white",
+                            color: 'black',
+                          }}
+                        
+                        className="text-3xl tracking-widest uppercase">
                         LeveL Stars
                     </p>
-                    <p className="text-xl">Someone</p>
+                    <p className="text-2xl uppercase font-bold">Astronaut</p>
             </div>
                 <div className="flex items-center gap-x-4">
-                    <button className="w-3/6 py-4 px-6 bg-black items-center text-nowrap flex justify-center gap-x-1">
-                        <FaCirclePlay/>
+                    <Link href="" className="bg-red-700 text-white py-4 px-8 hover:bg-white hover:text-black text-lg transition-colors duration-300 items-center text-nowrap flex justify-center gap-x-2">
+                        <FaCirclePlay />
                         Listen Now
-                    </button>
-                    <button className="w-2/6 py-3   px-6  flex gap-x-2 text-center">
-                        share
-                    </button>
+                    </Link>
+                    <Link href="" className="bg-black border text-white text-lg hover:bg-white hover:text-black transition-colors duration-300 py-4   px-8  flex items-center gap-x-2 text-center">
+                        <FaShareAlt />
+                        <p>
+                            Share
+                        </p>
+                    </Link>
             </div>
             </div>
         </div>
