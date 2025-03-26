@@ -5,10 +5,10 @@ const Tracks = () => {
     return (
         <div className="w-[95%] p-6 flex flex-col gap-y-6">
             <h1 className="uppercase text-4xl tracking-widest font-bold">Track List</h1>
-            <div className="flex flex-col  w-full">
+            <div className="flex flex-col  w-[95%] ">
                 {tracks.map((track, index) => (
                     
-                    <div key={`track-${index}`} className="w-full flex justify-between  py-4 text-gray-300 text-xl font-light">
+                    <div key={`track-${index}`} className="font-semibold w-full flex justify-between  py-4 text-gray-300 text-lg ">
                     <div className=" flex   gap-x-6 items-center">
                             <p className="min-w-[24px]">{ index+1}</p>
                         <CiPlay1 />

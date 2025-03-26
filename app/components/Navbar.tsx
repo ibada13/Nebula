@@ -4,7 +4,7 @@ import { socialmedias } from "./data/socialmediadata";
 import Link from "next/link";
 export default function Navbar() { 
     return (
-        <div className="bg-black/50 z-50 sticky   backdrop-blur-md w-full top-0 left-0 self-start  flex justify-between items-center p-4 ">
+        <div className="bg-black/50 z-50 sticky  font-light   backdrop-blur-md w-full top-0 left-0 self-start  flex justify-between items-center p-4 ">
             <GiSaberToothedCatHead size={30}/>
             <div className="flex justify-around gap-x-4">
                 {socialmedias.map((socialmedia, index) => (
