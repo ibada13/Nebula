@@ -11,7 +11,7 @@ export default function Background() {
           className="blur-xs scale-110" 
           priority
         />
-        <div className="absolute  w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0.1)]  via-[rgba(0,0,0,0.7)]  to-black opacity-100"></div>
+        <div className="absolute  w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0)]  via-[rgba(0,0,0,0.9)]  to-black opacity-95"></div>
         
       </div>
       
