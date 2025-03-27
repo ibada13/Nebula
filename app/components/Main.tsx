@@ -4,18 +4,17 @@ import { FaShareAlt } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
 export default function Main() { 
     return (
-        <div className=" left-0 mt-25  w-full flex gap-x-15  items-center p-6 ">
-            <div className="flex  ml-4 h-full w-2/5  gap-x-2 items-center">
+        <div className="  mt-25  w-full flex flex-col justify-center gap-y-8 mlg:gap-y-0  mlg:flex-row    mlg:gap-x-15  items-center p-6 ">
+            <div className="flex   mlg:ml-4 h-full gap-y-12 mlg:gap-y-0 flex-col-reverse md:flex-row mlg:w-2/5  gap-x-2 items-center">
             <p 
-    className="flex gap-x-2 text-lg font-extralight whitespace-nowrap h-[400px] leading-none items-center "
-    style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+    className="flex gap-x-2 h-full self-start  md:self-end text-lg  font-extralight whitespace-nowrap md:h-[400px]  leading-none  md:items-start md:[writing-mode:vertical-rl] md:rotate-180 "
 >
     <span className="inline text-red-600 ">Nebula</span> 
     <span className="inline scale-y-[400%] mx-2">-</span> 
     Released May 22, 2020 
 </p>
 
-                            <div className="h-[400px] aspect-square relative ">
+                            <div className="h-[120vh] mlg:h-[400px]  aspect-square relative ">
                     <Image 
                         src={'/background.jpg'} 
                         alt="album pic" 
@@ -24,8 +23,8 @@ export default function Main() {
                     />
                 </div>
             </div>
-            <div className="     p-4 w-1/2  h-full flex flex-col gap-y-16 justify-center">
-                <div className="flex flex-col justify-around gap-y-2">
+            <div className="     px-11 mlg:p-8  w-full  mlg:w-1/2  h-full flex flex-col gap-y-8  mlg:gap-y-16 mlg:justify-center items-start">
+                <div className="flex flex-col justify-around gap-y-2 ">
                     <p
                           style={{
                             WebkitTextStroke: "1px white",
@@ -38,7 +37,7 @@ export default function Main() {
                     <p className="text-2xl uppercase font-bold">Astronaut</p>
             </div>
                 <div className="flex items-center gap-x-4">
-                    <Link href="" className="bg-red-700 text-white py-4 px-8 hover:bg-white hover:text-black text-lg transition-colors duration-300 items-center text-nowrap flex justify-center gap-x-2">
+                    <Link href="" className="bg-[#d71300] text-white py-4 px-8 hover:bg-white hover:text-black text-lg transition-colors duration-300 items-center text-nowrap flex justify-center gap-x-2">
                         <FaCirclePlay />
                         Listen Now
                     </Link>
