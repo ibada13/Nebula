@@ -4,13 +4,16 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@theme {
+  --breakpoint-mlg: 980px;
+
+}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --breakpoint-mlg: 1000px;
 }
 
 @media (prefers-color-scheme: dark) {

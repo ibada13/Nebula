@@ -1,6 +1,6 @@
 const MusicVideo = () => { 
     return (
-        <div className="flex flex-col gap-y-8  w-[95%] p-6">
+        <div className="flex flex-col gap-y-8  md:w-[95%] w-[95%] sm:w-5/6 p-6">
             <h1 className="uppercase text-3xl tracking-widest">music video</h1>
             <iframe
                 src="https://www.youtube.com/embed/uT5X9aDYcPw"

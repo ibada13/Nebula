@@ -1,6 +1,8 @@
+'use client';
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import Main from "./components/Main";
+import "./globals.css"
 import Stream from "./components/Stream";
 import Tracks from "./components/Trarcks";
 import MusicVideo from "./components/MusicVideo";

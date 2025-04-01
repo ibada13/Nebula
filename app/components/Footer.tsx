@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className="flex flex-col gap-y-12   w-[95%] p-6 mt-8 shadow-2xl">
                 <AboutUs />
-            <div className="flex justify-between text-sm text-gray-200 font-light items-center">
+            <div className="flex gap-y-3 md:gap-y-0 flex-col md:flex-row justify-between text-sm text-gray-200 font-light items-center">
                     <p className="tracking-widest">1945 - 2025 © Monstercat, All Rights Reserved</p>
                 <div className="flex gap-x-4">
                     {medias.map((media, index) => (

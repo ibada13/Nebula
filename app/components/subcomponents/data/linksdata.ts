@@ -19,5 +19,16 @@ const policylinks: Link[] = [
     { title: "Privacy Policy", link: "" },
 ]
 
-  export  {links , policylinks};
+
+const navlinks: Link[] = [
+  { title: "Music", link: "" },
+  { title: "Artist", link: "" },
+  { title: "About", link: "" },
+  { title: "Company", link: "" },
+  { title: "Linkx", link: "" },
+  { title: "Linky", link: "" },
+  { title: "Linz", link: "" }
+];
+
+  export  {links , policylinks , navlinks};
   
