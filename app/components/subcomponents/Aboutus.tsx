@@ -20,7 +20,7 @@ export default function AboutUs() {
             <div className="flex flex-col w-full md:w-1/3 gap-y-4 md:gap-y-2 ">
   <p className="text-gray-500">Neblua news</p>
   <p className="font-light text-xs">
-    Don't miss a thing, stay up to date with the latest news from us.
+    Don&apos;t miss a thing, stay up to date with the latest news from us.
   </p>
   <div className="w-full max-w-xs  border-b-2 border-b-gray-400 flex gap-x-1 items-center py-2">
     <input
